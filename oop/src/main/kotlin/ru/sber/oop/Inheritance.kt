@@ -2,7 +2,7 @@ package ru.sber.oop
 
 open class Room(val name: String, val size: Int) {
 
-    constructor(name: String) : this(name, 100)
+    constructor(name: String): this(name, 100)
 
     val goblin: Monster = Goblin(
             "Green Goblin",
