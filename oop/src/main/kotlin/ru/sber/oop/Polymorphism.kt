@@ -24,7 +24,6 @@ class Player(val name: String,
 {
     override fun attack(opponent: Fightable): Int
     {
-
         val damage: Int = if (isBlessed)
             {
                 2 * damageRoll

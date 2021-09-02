@@ -4,7 +4,8 @@ open class Room(val name: String, val size: Int) {
 
     constructor(name: String) : this(name, 100)
 
-    val goblin: Monster = Goblin("Green Goblin",
+    val goblin: Monster = Goblin(
+            "Green Goblin",
             "enemy of spiderman",
             1000,
             "smoke bomb")
