@@ -15,7 +15,7 @@ class Archivator {
      * Метод, который архивирует файл logfile.log в архив logfile.zip.
      * Архив должен располагаться в том же каталоге, что и исходной файл.
      */
-    fun zipLogfile(filePath: String = "lodfile.log", zipFilePath: String = "lodfile.zip") {
+    fun zipLogfile(filePath: String = "logfile.log", zipFilePath: String = "logfile.zip") {
         try {
             val zipOutputStream = ZipOutputStream(FileOutputStream(zipFilePath))
             val fileInputStream = FileInputStream(filePath)
@@ -40,7 +40,7 @@ class Archivator {
      * Метод, который извлекает файл из архива.
      * Извлечь из архива logfile.zip файл и сохарнить его в том же каталоге с именем unzippedLogfile.log
      */
-    fun unzipLogfile(filePath: String = "unzippedLogfile.log", zipFilePath: String = "lodfile.zip") {
+    fun unzipLogfile(filePath: String = "unzippedLogfile.log", zipFilePath: String = "logfile.zip") {
         try {
             val zipInputStream = ZipInputStream(FileInputStream(zipFilePath))
             val fileOutputStream = FileOutputStream(filePath)
