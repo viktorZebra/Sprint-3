@@ -1,5 +1,3 @@
-package src.main.kotlin.ru.sber.io
-
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import ru.sber.io.Archivator
