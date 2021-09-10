@@ -31,8 +31,8 @@ class Grep {
                 Files.walk(path).filter { it.isRegularFile() }.forEach {
                     file ->
                     file.useLines {
-                        line ->
-                        line.filter {
+                        lines ->
+                        lines.filter {
                             currLine ->
                             currLine.contains(subString)
                         }.forEach {
